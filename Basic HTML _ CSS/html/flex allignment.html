@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex</title>
+    <style>
+        .flex-container {
+            display: flex;
+            background-color: lightgreen;
+            /* Horizontal axis */
+            /* flex-direction: row; */
+            /* Vertical axis */
+            /* flex-direction: column; */
+            /* work on cross axis */
+            align-items: center;
+            /* align-items: flex-start; */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            /* work on main axis */
+            justify-content: center;
+            /* justify-content: flex-start; */
+            /* justify-content: flex-end; */
+            /* justify-content: space-around; */
+            /* justify-content: space-between; */
+            height: 70vh;
+        }
+        
+        .item-1 {
+            align-self: flex-start;
+        }
+        
+        .item-3 {
+            align-self: flex-end;
+        }
+        
+        .item {
+            background-color: #f4f4f4;
+            border: #cccccc solid 2px;
+            text-align: center;
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            /* flex: 1; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div class="item item-1">
+            <h3>itme-1</h3>
+        </div>
+        <div class="item item-2">
+            <h3>itme-2</h3>
+        </div>
+        <div class="item item-3">
+            <h3>itme-3</h3>
+        </div>
+    </div>
+</body>
+
+</html>

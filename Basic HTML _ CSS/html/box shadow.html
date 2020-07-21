@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+    }
+    
+    .box {
+        padding: 1rem;
+        margin: 1rem;
+        background: coral;
+        color: #ffffff;
+        /* box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.5); */
+        /* box-shadow: inset -3px -3px 10px 1px rgba(0, 0, 0, 0.5); */
+        box-shadow: 3px 3px 10px 1px rgba(0, 0, 0, 0.3), inset -3px -3px 10px 1px rgba(0, 0, 0, 0.3);
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo repudiandae iusto non dolorem eius aspernatur placeat sed, vero adipisci?</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo repudiandae iusto non dolorem eius aspernatur placeat sed, vero adipisci?</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio explicabo repudiandae iusto non dolorem eius aspernatur placeat sed, vero adipisci?</p>
+        </div>
+    </div>
+</body>
+
+</html>
